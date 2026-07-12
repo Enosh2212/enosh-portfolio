@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "number": "01",
+      "title": "Sukoon",
+      "type": "Full-stack product · Live beta",
+      "summary": "A privacy-first anonymous support platform with real-time chat, voice rooms, safety controls, and a carefully bounded AI companion.",
+      "outcome": "Built as a working product—not a static concept—with live communication, reporting, privacy and crisis-safety flows.",
+      "stack": ["Next.js", "Node.js", "Socket.IO", "MongoDB", "LiveKit"],
+      "live": "https://sukoon-nine-delta.vercel.app/",
+      "caseStudy": "https://github.com/Enosh2212/sukoon-case-study",
+      "accent": "violet",
+      "featured": true
+    },
+    {
+      "number": "02",
+      "title": "RiskLens AI",
+      "type": "Applied ML · Decision support",
+      "summary": "An explainable credit-default analytics system with model comparison, customer-level drivers and a threshold simulator.",
+      "outcome": "30,000 predictions · Random Forest ROC AUC 0.7625 · honest model limitations documented.",
+      "stack": ["Python", "scikit-learn", "SQLite", "Streamlit"],
+      "source": "https://github.com/Enosh2212/risklens-ai",
+      "accent": "blue",
+      "featured": true
+    },
+    {
+      "number": "03",
+      "title": "RetailFlow AI",
+      "type": "Forecasting · Retail operations",
+      "summary": "A SQL-backed replenishment exception assistant that routes unreliable forecasts to human review instead of overclaiming automation.",
+      "outcome": "1.09M fact rows · 565 SKU-store pairs · explainable planner action queue.",
+      "stack": ["SQL Server", "Python", "Forecasting", "Plotly"],
+      "source": "https://github.com/Enosh2212/retailflow-ai",
+      "accent": "green"
+    },
+    {
+      "number": "04",
+      "title": "FlatSync 2.0",
+      "type": "Full-stack operations · Live",
+      "summary": "A practical apartment operations workspace for resident coordination, maintenance communication, payment records and day-to-day administration.",
+      "outcome": "Designed around a real residential workflow and used as a working web application.",
+      "stack": ["Web app", "Operations", "Payments", "Resident UX"],
+      "live": "https://flatsync-20.vercel.app/",
+      "accent": "orange"
+    },
+    {
+      "number": "05",
+      "title": "Coffee Revenue Intelligence",
+      "type": "Business analytics · Live dashboard",
+      "summary": "A boardroom-style sales dashboard covering executive KPIs, product performance, customer demand, staffing windows and recommendations.",
+      "outcome": "Turns transaction data into client-ready commercial and operational decisions.",
+      "stack": ["Streamlit", "Pandas", "Plotly", "Business BI"],
+      "live": "https://coffee-shop-revenue-intelligence-dashboard-g2vbsum26qqwfnhpcnp.streamlit.app/",
+      "source": "https://github.com/Enosh2212/coffee-shop-revenue-intelligence-dashboard",
+      "accent": "red"
+    },
+    {
+      "number": "06",
+      "title": "CodeGum / VibeFix",
+      "type": "Developer tooling · In development",
+      "summary": "A repository auditor for build, API, deployment, route-contract and fix-plan diagnostics across codebases of different sizes.",
+      "outcome": "Evidence-first analysis, scan-depth planning and production-minded safety boundaries.",
+      "stack": ["Next.js", "FastAPI", "TypeScript", "Python"],
+      "caseStudy": "mailto:enoshdavidsingh3@gmail.com?subject=CodeGum%20project%20discussion",
+      "accent": "cyan"
+    }
+  ],
+  "additionalWork": [
+    {
+      "title": "QuickCart Intelligence",
+      "copy": "Million-row quick-commerce revenue, delivery and customer analytics.",
+      "href": "https://github.com/Enosh2212/quickcart-intelligence"
+    },
+    {
+      "title": "Sonar ADAS Digital Twin",
+      "copy": "Browser-based ultrasonic sensing, ECU filtering and driver-alert simulation.",
+      "href": "https://github.com/Enosh2212/sonar-adas-digital-twin"
+    },
+    {
+      "title": "EEG Addiction Detection",
+      "copy": "CNN-backed EEG classification learning prototype with a Streamlit interface.",
+      "href": "https://github.com/Enosh2212/eeg-based-addiction-detection-"
+    }
+  ]
+}
