@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.next-*/
+out/
+.vercel/
+.env
+.env.*
+*.tsbuildinfo
+*.pem
+*.key
+SECURITY_AUDIT.md

@@ -1,0 +1,26 @@
+@font-face { font-family: 'Gasoek One'; src: url('/assets/fonts/gasoek-one-latin.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'DynaPuff'; src: url('/assets/fonts/dynapuff-latin.woff2') format('woff2'); font-weight: 400 700; font-display: swap; }
+@font-face { font-family: 'Bagel Fat One'; src: url('/assets/fonts/bagel-fat-one-latin.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Lilita One'; src: url('/assets/fonts/lilita-one-latin.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+.page { padding-block: 52px 80px; font-family: 'DM Sans', Arial, sans-serif; }
+.page h1 { font-size: clamp(36px,6vw,70px); margin-bottom: 32px; }
+.pairing { border-top: 1px solid #b39a6e66; padding-block: 24px 38px; }
+.pairing h2 { font: 800 1.4rem 'Bricolage Grotesque', Arial, sans-serif; letter-spacing: -.02em; }
+.pairing > p, .sample > p { color: var(--muted); font-size: .82rem; }
+.samples { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,345px); gap: 16px 32px; margin-top: 14px; }
+.sampleBoard { padding: clamp(14px,3vw,28px); border: 1px solid #b39a6e66; background: #211e1a; }
+.line { font: 800 clamp(22px,4.2vw,49px)/1.08 'Bricolage Grotesque', Arial, sans-serif; letter-spacing: -.04em; overflow-wrap: anywhere; }
+.line + .line { margin-top: 7px; }
+.line[data-specimen='0'] { color: var(--gold); font: 900 clamp(32px,6.2vw,72px)/.99 'Fraunces', Georgia, serif; letter-spacing: -.055em; }
+.line[data-specimen='3'] { font-family: 'Fraunces', Georgia, serif; font-weight: 700; }
+.sampleBoard > p { margin-top: 15px; }
+.mobile { max-width: 345px; }
+.mobile .line { font-size: 25px; }
+.mobile .line[data-specimen='0'] { font-size: 36px; }
+.graphic .line[data-specimen='2'] { font-family: 'Gasoek One', Arial, sans-serif; font-weight: 400; }
+.graphic .line[data-specimen='5'], .rounded .line[data-specimen='5'] { font-family: 'DynaPuff', Arial, sans-serif; font-weight: 600; }
+.rounded .line[data-specimen='0'] { font-family: 'Bagel Fat One', Georgia, serif; font-weight: 400; }
+.rounded .line:not([data-specimen='0'],[data-specimen='5']) { font-family: 'Lilita One', Arial, sans-serif; font-weight: 400; }
+@media(max-width:700px) { .samples { grid-template-columns: 1fr; } }
+
+.pairing > .note { max-width: 65ch; margin-top: 6px; }

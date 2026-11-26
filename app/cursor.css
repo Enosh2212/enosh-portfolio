@@ -1,0 +1,20 @@
+@media (hover: hover) and (pointer: fine) and (forced-colors: none) {
+  body {
+    cursor: url('/assets/cursors/paper-plane.png') 4 4, auto;
+  }
+
+  :is(a[href], button, summary, label[for], [role='button'], .studio-cinema-frame video):not(:disabled, [aria-disabled='true'], .studio-art-trigger),
+  .character-greeting:not([aria-disabled='true']) img {
+    cursor: url('/assets/cursors/cat-paw.png') 9 4, pointer;
+  }
+
+  :is(button:disabled, input:disabled, a[aria-disabled='true'], [role='button'][aria-disabled='true']) {
+    cursor: not-allowed;
+  }
+
+  :is(input:not([type]), input[type='text'], input[type='search'], input[type='email'],
+    input[type='password'], input[type='url'], input[type='tel'], textarea,
+    [contenteditable]:not([contenteditable='false'])) {
+    cursor: text;
+  }
+}

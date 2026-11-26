@@ -1,22 +1,21 @@
 {
-  "name": "enosh-portfolio-portable",
+  "name": "enosh-unfolding-archive",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": ">=20.9.0" },
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/dev.mjs",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint . --ignore-pattern .next",
-    "portfolio:wizard": "node scripts/portfolio-cli.mjs wizard",
-    "portfolio:add": "node scripts/portfolio-cli.mjs add",
-    "portfolio:list": "node scripts/portfolio-cli.mjs list",
-    "portfolio:remove": "node scripts/portfolio-cli.mjs remove",
-    "portfolio:doctor": "node scripts/portfolio-cli.mjs doctor",
-    "portfolio:push": "node scripts/portfolio-cli.mjs push"
+    "lint": "eslint app components content",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "16.2.6",
+    "gsap": "3.15.0",
+    "next": "16.4.6",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
@@ -26,9 +25,8 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.4.6",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
-  },
-  "type": "module"
+  }
 }

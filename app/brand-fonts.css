@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/assets/fonts/fraunces-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('/assets/fonts/bricolage-grotesque-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/assets/fonts/dm-sans-latin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --body: 'DM Sans', Arial, Helvetica, sans-serif;
+  --brand-heading: 'Bricolage Grotesque', Arial, Helvetica, sans-serif;
+  --brand-editorial: 'Fraunces', Georgia, serif;
+}
+
+body, .button, .gate-open {
+  font-family: var(--body);
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+#home-title {
+  font-family: var(--brand-editorial);
+  font-weight: 900;
+  font-optical-sizing: auto;
+  font-variation-settings: 'SOFT' 12, 'WONK' 1;
+  font-kerning: normal;
+  letter-spacing: -.048em;
+  line-height: .94;
+}
+
+#home-title span {
+  padding-bottom: .21em;
+}
+
+.archive-head h2,
+.beyond-heading h2,
+.section-line h2,
+.studio-heading :is(h1, h2),
+.studio-deck-story :is(h2, h3),
+.connect-left h2 {
+  font-family: var(--brand-heading);
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  letter-spacing: -.048em;
+}
+
+.studio-heading :is(h1, h2) {
+  font-size: clamp(46px, 8.6vw, 122px);
+  line-height: .94;
+  text-wrap: balance;
+}
+
+.about-spread h2 {
+  font-family: var(--brand-editorial);
+  font-weight: 750;
+  letter-spacing: -.055em;
+}
+
+.about-spread h2 em {
+  font-family: Georgia, serif;
+}
+
+.brand-home {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 44px;
+  min-height: 44px;
+}
+
+.brand-mascot {
+  display: block;
+  flex: none;
+  box-sizing: border-box;
+  padding: 2px;
+  border: 1px solid #8b7138;
+  border-radius: 50%;
+  background: #d1a944;
+  object-fit: contain;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .45em;
+}
+
+.site-footer {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .brand-home .brand-mascot {
+    transition: transform 180ms ease-out;
+  }
+
+  .brand-home:hover .brand-mascot {
+    transform: translateY(-1px) rotate(-7deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-home .brand-mascot {
+    width: 36px;
+    height: 36px;
+  }
+}
